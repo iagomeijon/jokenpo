@@ -1,0 +1,66 @@
+$rock-color: #27AE60;
+$paper-color: #F1C40F;
+$scissor-color: #2980B9;
+$pc-color: #E74C3C;
+
+
+.Board {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+
+  .Rock {
+    border-color: $rock-color;
+  }
+
+  .Paper {
+    border-color: $paper-color;
+  }
+
+  .Scissor {
+    border-color: $scissor-color;
+  }
+
+  .Loading {
+    border-color: $pc-color;
+  }
+
+  .Item {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-width: 16px;
+    border-style: solid;
+    background-color: #fff;
+
+    height: 100px;
+    width: 100px;
+
+    border-radius: 65px;
+
+    cursor: pointer;
+
+    img {
+      width: 48px;
+    }
+
+    @media (min-width: 960px) {
+      height: 180px;
+      width: 180px;
+      border-radius: 100px;
+    }
+  }
+
+  
+  @media (min-width: 960px) {
+    width: 35%;
+  }
+}

@@ -1,3 +1,9 @@
+@import-normalize;
+
+:root {
+  --background-color: #2C3E50;
+}
+
 .App {
   text-align: center;
 }
