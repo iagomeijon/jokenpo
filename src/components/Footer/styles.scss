@@ -1,0 +1,25 @@
+$button-color: #2980B9;
+
+.Footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .Result {
+
+        font-weight: 700;
+        color: #ECF0F1;
+
+    }
+    button {
+
+        cursor: pointer;
+        border: none;
+        background-color: $button-color;
+        color: #ECF0F1;
+        padding: 12px 24px;
+
+    }
+}
