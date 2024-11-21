@@ -1,15 +1,17 @@
+@import-normalize;
 
-$background-main-color: #2C3E50;
 
 .Home {
-    width: 100%;
-    height: 100vh;
-    background-color: $background-main-color;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 
-    gap: 24px;
+  gap: 24px;
+
+  font-family: 'Roboto', sans-serif;
 }

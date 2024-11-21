@@ -1,6 +1,6 @@
 export default interface IFooterProps {
-    isLoading: boolean;
-    result: number;
-    pcSelect: number;
-    resetGame: () => void;
+  isLoading: boolean;
+  result: number;
+  pcSelect: number;
+  resetGame: () => void;
 }

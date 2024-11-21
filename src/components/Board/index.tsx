@@ -5,7 +5,6 @@ import Scissor from "../../assets/png/scissor.png";
 import IBoardProps from "./interfaces";
 
 function Board({ playerSelect, pcSelect, handleSelectOption }: IBoardProps) {
-
   const renderPcTurn = () => {
     if (playerSelect === -1) {
       return;
@@ -33,8 +32,8 @@ function Board({ playerSelect, pcSelect, handleSelectOption }: IBoardProps) {
     return <div className="Item Loading" />;
   };
 
-  const renderTurn = () => {
-    if (playerSelect === 0 ) {
+  const renderPlayerTurn = () => {
+    if (playerSelect === 0) {
       return (
         <div className="Item Rock">
           <img src={Rock} alt="game-icon" />
@@ -53,7 +52,6 @@ function Board({ playerSelect, pcSelect, handleSelectOption }: IBoardProps) {
         <img src={Scissor} alt="game-icon" />
       </div>
     );
-
   };
 
   return (
@@ -74,8 +72,8 @@ function Board({ playerSelect, pcSelect, handleSelectOption }: IBoardProps) {
         </>
       ) : (
         <>
-        {renderTurn()}
-        {renderPcTurn()}
+          {renderPlayerTurn()}
+          {renderPcTurn()}
         </>
       )}
     </div>

@@ -1,25 +1,25 @@
-$button-color: #2980B9;
-
 .Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .Result {
+    font-weight: 700;
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 0px 10px;
 
-    .Result {
-
-        font-weight: 700;
-        color: #ECF0F1;
-
-    }
-    button {
-
-        cursor: pointer;
-        border: none;
-        background-color: $button-color;
-        color: #ECF0F1;
-        padding: 12px 24px;
-
-    }
+  }
+  button {
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+    padding: 12px 24px;
+    border-radius: 8px;
+  }
 }
